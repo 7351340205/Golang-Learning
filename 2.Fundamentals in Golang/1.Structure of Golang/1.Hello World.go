@@ -25,3 +25,9 @@ func main() {
 func init() {
 	fmt.Println("Package main inited")
 }
+
+//关于注释：
+//Golang支持C/C++风格的//注释
+/**
+ * 也支持 JavaLike的块注释
+ **/
