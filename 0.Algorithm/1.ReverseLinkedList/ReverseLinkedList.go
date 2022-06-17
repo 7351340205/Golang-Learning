@@ -2,6 +2,7 @@ package main
 
 import "fmt"
 
+//链表结构
 type ListNode struct {
 	Val  int
 	Next *ListNode
@@ -9,6 +10,7 @@ type ListNode struct {
 
 func main() {
 
+	//创建链表
 	head := new(ListNode)
 	head.Val = 0
 
@@ -27,6 +29,7 @@ func main() {
 	node5 := new(ListNode)
 	node5.Val = 5
 
+	//连接链表
 	head.Next = node1
 	node1.Next = node2
 	node2.Next = node3
@@ -43,6 +46,7 @@ func ReverseList(node *ListNode) *ListNode {
 
 	var pre *ListNode
 
+	//反转链表
 	for node != nil {
 		temp := node.Next
 		node.Next = pre
@@ -53,6 +57,7 @@ func ReverseList(node *ListNode) *ListNode {
 	return pre
 }
 
+//遍历打印链表值
 func Println(list *ListNode) {
 	for list != nil {
 		fmt.Printf("val:%v ", list.Val)
