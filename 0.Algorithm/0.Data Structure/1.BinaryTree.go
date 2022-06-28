@@ -96,8 +96,9 @@ func (tree *Tree) PostOrderTraverse(node *TreeNode) {
 	}
 }
 
-func Delete() {
+func (tree *Tree)Delete() {
 
+	
 }
 
 func Update() {
@@ -125,5 +126,5 @@ func DelMax(){
 }
 
 func DelMin(){
-	
+
 }
