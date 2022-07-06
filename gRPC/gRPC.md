@@ -1,0 +1,1 @@
+gRPC是Google开源的 个高性能、跨语言的RPC框架，基于HTTP/2协议实现。它使用protobuf作为序列化和反序列化协议，即基于 protobuf 来声明数据模型和RPC接口服务。protobuf的效率远高于JSON，尽管etcd v2的客户端已经对JSON的序列号和反序列化进行了大量的优化，但是etcd v3的gRPC序列号和反序列化的速度依旧是etcd v2的两倍多。
