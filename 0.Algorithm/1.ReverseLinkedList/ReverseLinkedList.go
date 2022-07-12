@@ -57,7 +57,7 @@ func ReverseList(node *ListNode) *ListNode {
 	return pre
 }
 
-//遍历打印链表值
+// Println 遍历打印链表值
 func Println(list *ListNode) {
 	for list != nil {
 		fmt.Printf("val:%v ", list.Val)
